@@ -1,0 +1,146 @@
+<html>
+<head>
+    <title>Dulcería Online</title>
+    <style>
+        /* Estilos para la página web */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            color: #ff0000;
+            font-size: 36px;
+        }
+        nav {
+            background-color: #ff0000;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav a {
+            color: #ffffff;
+            font-size: 18px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            margin: 20px;
+        }
+        section h2 {
+            color: #ff0000;
+            font-size: 24px;
+        }
+        section p {
+            font-size: 16px;
+        }
+        section img {
+            width: 300px;
+            height: 200px;
+        }
+        section ul {
+            list-style-type: none;
+        }
+        section li {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #f0f0f0;
+        }
+        section li h3 {
+            color: #ff0000;
+            font-size: 18px;
+        }
+        section li p {
+            font-size: 14px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        form label {
+            font-size: 16px;
+        }
+        form input, form textarea {
+            margin: 10px;
+            padding: 10px;
+            width: 300px;
+        }
+        form input[type="submit"] {
+            background-color: #ff0000;
+            color: #ffffff;
+            border: none;
+        }
+        footer {
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dulcería Online</h1>
+    </header>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    <section id="inicio">
+        <h2>Bienvenidos a Dulcería Online</h2>
+        <p>Somos una empresa dedicada a la venta de dulces típicos mexicanos, elaborados con ingredientes naturales y de la mejor calidad. Ofrecemos una gran variedad de productos para satisfacer todos los gustos y ocasiones. Contamos con envíos a todo el país y precios accesibles.</p>
+        <img src="dulces.jpg" alt="Imagen de dulces">
+    </section>
+    <section id="productos">
+        <h2>Nuestros Productos</h2>
+        <p>Aquí te mostramos algunos de nuestros productos más populares. Puedes ver el catálogo completo en nuestra tienda en línea.</p>
+        <ul>
+            <li>
+                <h3>Alegrías</h3>
+                <p>Deliciosas barras de amaranto con miel y semillas de calabaza. Ideales para disfrutar como snack o postre. Precio: $15.00 MXN cada una.</p>
+                <img src="alegrias.jpg" alt="Imagen de alegrías">
+            </li>
+            <li>
+                <h3>Cajeta</h3>
+                <p>Exquisita pasta de leche de cabra caramelizada con sabor a vainilla o canela. Perfecta para untar en pan, galletas o frutas. Precio: $50.00 MXN el frasco.</p>
+                <img src="cajeta.jpg" alt="Imagen de cajeta">
+            </li>
+            <li>
+                <h3>Glorias</h3>
+                <p>Suaves y cremosos dulces de leche quemada con nuez. Un clásico de la repostería mexicana. Precio: $20.00 MXN cada uno.</p>
+                <img src="glorias.jpg" alt="Imagen de glorias">
+            </li>
+        </ul>
+    </section>
+    <section id="nosotros">
+        <h2>Quiénes Somos</h2>
+        <p>Dulcería Online es una empresa familiar que nació en el año 2020, con el propósito de ofrecer dulces típicos mexicanos de alta calidad y sabor. Nos inspiramos en las recetas tradicionales de nuestras abuelas, que nos enseñaron el arte de la dulcería. Nuestra misión es compartir nuestra pasión por los dulces con nuestros clientes, brindándoles un servicio de excelencia y una experiencia única.</p>
+    </section>
+    <section id="contacto">
+        <h2>Contáctanos</h2>
+        <p>Si tienes alguna duda, sugerencia o comentario, puedes enviarnos un mensaje a través del siguiente formulario. Te responderemos lo antes posible.</p>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="Escribe tu correo electrónico" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje" required></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+    <footer>
+        <p>Dulcería Online © 2023. Todos los derechos reservados.</p>
+        <p>Dirección: Av. México #123, Cuautitlán Izcalli, México.</p>
+        <p>Teléfono: (55) 1234-5678.</p>
+    </footer>
+</body>
+</html>

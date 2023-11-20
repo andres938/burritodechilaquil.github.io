@@ -1,0 +1,153 @@
+<html>
+<head>
+    <title>Sunrise</title>
+	<link rel="shortcut icon" href="logo.png">
+    <style>
+        /* Estilos para la página web */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+		header .logo img{
+        height: 150px;
+		align: right;
+        }
+        header h1 {
+            color: #18db42;
+            font-size: 36px;
+        }
+        nav {
+            background-color: #a5fc19;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav a {
+            color: #ffffff;
+            font-size: 18px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            margin: 20px;
+        }
+        section h2 {
+            color: #ff0000;
+            font-size: 24px;
+        }
+        section p {
+            font-size: 16px;
+        }
+        section img {
+            width: 300px;
+            height: 200px;
+        }
+        section ul {
+            list-style-type: none;
+        }
+        section li {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #f0f0f0;
+        }
+        section li h3 {
+            color: #ff0000;
+            font-size: 18px;
+        }
+        section li p {
+            font-size: 14px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        form label {
+            font-size: 16px;
+        }
+        form input, form textarea {
+            margin: 10px;
+            padding: 10px;
+            width: 300px;
+        }
+        <input type = "button"id ="bt"value="aceptar"onClick="Funcion();"/> {
+
+
+            
+            background-color:#00ffdd;
+            color: #ffffff;
+            border: none;
+        }
+        footer {
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+       
+</script>
+
+    </style>
+</head>
+
+<body>
+    <header>
+	<div class="logo">
+            <img src="logo.png" alt="Logo">
+        <h1>Sunrise</h1>
+    </header>
+    <nav>
+           <a href="index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+        <a herf="borrador.html">Borrador</a>
+    </nav>
+  
+    <section id="contacto">
+      <center>  <h2>Contáctanos</h2>
+        <p>Si tienes alguna duda, sugerencia o comentario, puedes enviarnos un mensaje a través del siguiente formulario. Te responderemos lo antes posible.</p>
+        </center>
+		<form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="Escribe tu correo electrónico" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje" required></textarea>
+            <button id="miBoton">informacion de seguridad</button>
+
+<script>
+  document.getElementById("miBoton").addEventListener("click", function() {
+    alert("todos los datos estan guardados en una base con alta seguridad");
+  });
+</script>
+<input id="miInput" type="text" placeholder="Presiona una tecla">
+
+<script>
+  var input = document.getElementById("miInput");
+  input.addEventListener("keypress", function(event) {
+    alert("Tecla presionada: " + event.key);
+  });
+</script>
+<script>
+  window.addEventListener("load", function() {
+    alert("La página se ha cargado completamente.");
+  });
+</script>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+    <footer>
+        <p>Sunrise © 2023. Todos los derechos reservados.</p>
+        <p>Dirección: Av. México #123, Cuautitlán Izcalli, México.</p>
+        <p>Teléfono: (55) 1234-5678.</p>
+    </footer>
+</body>
+</html>
